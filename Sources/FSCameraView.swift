@@ -21,6 +21,7 @@ final class FSCameraView: UIView, UIGestureRecognizerDelegate {
     @IBOutlet weak var flashButton: UIButton!
     @IBOutlet weak var flipButton: UIButton!
     @IBOutlet weak var fullAspectRatioConstraint: NSLayoutConstraint!
+    @IBOutlet weak var textLabel: UILabel!
     var croppedAspectRatioConstraint: NSLayoutConstraint?
     var initialCaptureDevicePosition: AVCaptureDevice.Position = .back
 

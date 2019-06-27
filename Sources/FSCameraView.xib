@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,18 +19,30 @@
                     <rect key="frame" x="0.0" y="0.0" width="400" height="500"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZ8-Sp-jjd">
-                            <rect key="frame" x="0.0" y="0.0" width="400" height="500"/>
+                            <rect key="frame" x="0.0" y="50.5" width="400" height="399"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="SZ8-Sp-jjd" secondAttribute="height" multiplier="3:4" priority="750" constant="1" id="50d-Ra-Hof"/>
+                                <constraint firstAttribute="width" secondItem="SZ8-Sp-jjd" secondAttribute="height" multiplier="3:3" priority="750" constant="1" id="50d-Ra-Hof"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCn-Pn-hUw" userLabel="Spacer">
-                            <rect key="frame" x="0.0" y="500" width="400" height="0.0"/>
+                            <rect key="frame" x="0.0" y="449.5" width="400" height="50.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBP-Tq-41s">
+                                    <rect key="frame" x="20" y="25.5" width="360" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="XBP-Tq-41s" firstAttribute="leading" secondItem="fCn-Pn-hUw" secondAttribute="leading" constant="20" id="0gz-wD-ldR"/>
+                                <constraint firstAttribute="trailing" secondItem="XBP-Tq-41s" secondAttribute="trailing" constant="20" id="2Rl-C2-pee"/>
+                                <constraint firstItem="XBP-Tq-41s" firstAttribute="centerY" secondItem="fCn-Pn-hUw" secondAttribute="centerY" id="ug8-UW-vS6"/>
+                            </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYR-Km-8NT" userLabel="Spacer">
-                            <rect key="frame" x="0.0" y="0.0" width="400" height="0.0"/>
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="50.5"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                     </subviews>
@@ -120,6 +131,7 @@
                 <outlet property="fullAspectRatioConstraint" destination="50d-Ra-Hof" id="6YW-vf-C0C"/>
                 <outlet property="previewViewContainer" destination="SZ8-Sp-jjd" id="jWl-8h-3MN"/>
                 <outlet property="shotButton" destination="o8l-Ld-Oon" id="kCQ-i4-gDf"/>
+                <outlet property="textLabel" destination="XBP-Tq-41s" id="0NN-Kj-3TZ"/>
             </connections>
             <point key="canvasLocation" x="269" y="405"/>
         </view>
